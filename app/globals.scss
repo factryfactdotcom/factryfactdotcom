@@ -1,0 +1,14 @@
+@import './fonts.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ok {
+  font-size: 100px;
+}
+.test {
+  font-family: 'Roboto';
+}
+.light {
+  font-family: 'Rajdhani';
+}
