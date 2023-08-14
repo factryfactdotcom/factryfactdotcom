@@ -3,12 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.ok {
-  font-size: 100px;
+.children-container {
+  min-height: 50vh;
 }
-.test {
-  font-family: 'Roboto';
-}
-.light {
-  font-family: 'Rajdhani';
+.slick-list {
+  user-select: text !important;
 }
