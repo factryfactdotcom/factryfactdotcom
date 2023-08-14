@@ -19,7 +19,7 @@ const page = () => {
           />
         </svg>
       ),
-      contact: 'Support@example.com',
+      contact: 'Support@factrfact.com.com',
     },
     {
       icon: (
@@ -58,7 +58,7 @@ const page = () => {
           />
         </svg>
       ),
-      contact: 'Mountain View, California, United State.',
+      contact: 'FactryFact Inc. Marathali, Benguluru, Karnataka, India.',
     },
   ];
   return (
@@ -66,7 +66,7 @@ const page = () => {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
           <div className="max-w-lg space-y-3">
-            <h3 className="text-indigo-600 font-semibold">Contact</h3>
+            <h3 className="text-teal-600 font-semibold text-lg">Contact Us</h3>
             <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">Let us know how we can help</p>
             <p>
               We’re here to help and answer any question you might have, We look forward to hearing from you! Please
@@ -93,7 +93,7 @@ const page = () => {
                 <input
                   type="text"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-teal-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -101,7 +101,7 @@ const page = () => {
                 <input
                   type="email"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-teal-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -109,17 +109,17 @@ const page = () => {
                 <input
                   type="text"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-teal-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
                 <label className="font-medium">Message</label>
                 <textarea
                   required
-                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-teal-600 shadow-sm rounded-lg"
                 ></textarea>
               </div>
-              <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
+              <button className="w-full px-4 py-2 text-white font-medium bg-teal-600 hover:bg-teal-500 active:bg-teal-600 rounded-lg duration-150">
                 Submit
               </button>
             </form>

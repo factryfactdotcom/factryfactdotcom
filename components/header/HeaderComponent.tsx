@@ -2,12 +2,14 @@
 import IheaderNavigation from '@/interfaces/IheaderNavigation';
 import { factryFactIcon, factryFactLogo } from '@/utils/apiConfig';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const navigation: Array<IheaderNavigation> = [
   { title: 'How it works?', path: '/' },
   { title: 'Features', path: '/' },
   { title: 'Free Demo', path: '/' },
-  { title: 'About Us', path: '/' },
+  { title: 'About Us', path: '/aboutus' },
+  { title: 'Our Team', path: '/team' },
 ];
 
 const HeaderComponent = () => {
@@ -66,9 +68,9 @@ const HeaderComponent = () => {
             <div>
               <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
                 <li className="mt-8 mb-8 lg:mt-0 text-lg lg:mb-0">
-                  <a href="/" className="text-gray-600 px-2 hover:text-teal-600">
+                  <Link href="/contact" className="text-gray-600 px-2 hover:text-teal-600">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-8 text-lg lg:mt-0">
                   <a
@@ -88,9 +90,9 @@ const HeaderComponent = () => {
                       key={idx}
                       className="text-gray-600 text-lg hover:text-teal-600 lg:hover:border-b-2 lg:hover:border-teal-600"
                     >
-                      <a className="" href={item.path}>
+                      <Link className="" href={item.path}>
                         {item.title}
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}
