@@ -7,7 +7,7 @@ const navigation: Array<IheaderNavigation> = [
   { title: 'How it works?', path: '/' },
   { title: 'Features', path: '/' },
   { title: 'Free Demo', path: '/' },
-  { title: 'About', path: '/' },
+  { title: 'About Us', path: '/' },
 ];
 
 const HeaderComponent = () => {
