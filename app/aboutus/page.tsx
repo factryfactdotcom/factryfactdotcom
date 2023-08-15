@@ -32,7 +32,10 @@ const page = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p
+            className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl"
+            style={{ fontFamily: 'Rajdhani' }}
+          >
             Everything you need to Know About Us, FactryFact
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -45,7 +48,7 @@ const page = () => {
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
                     <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                   </div>
                   {feature.name}

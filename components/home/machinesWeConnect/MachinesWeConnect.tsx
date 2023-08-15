@@ -1,9 +1,10 @@
+'use client';
 import React from 'react';
-import TrustedCompaniesSlider from './TrustedCompaniesSlider';
-import homeTrustedCompaniesProps from '@/interfaces/types/homeTrustedCompaniesProps';
-import itrustedCompanies from '@/interfaces/ItrustedCompanies';
+import TrustedVendorsSlider from './TrustedVendorsSlider';
+import homeTrustedVendorsProps from '@/interfaces/types/homeTrustedVendorsProps';
+import ItrustedVendors from '@/interfaces/ItrustedVendors';
 
-type Props = homeTrustedCompaniesProps;
+type Props = homeTrustedVendorsProps;
 
 const MachinesWeConnect = (props: Props) => {
   const { data, resOk, status, url } = props;
@@ -18,8 +19,10 @@ const MachinesWeConnect = (props: Props) => {
             We support all CNC, VMC, and HMC controllers including
           </p>
         </div>
-        <TrustedCompaniesSlider
-          data={data as itrustedCompanies[]}
+      </div>
+      <div className="pb-20">
+        <TrustedVendorsSlider
+          data={data as ItrustedVendors[]}
           resOk={resOk as boolean}
           status={status as number}
           url={url as string}

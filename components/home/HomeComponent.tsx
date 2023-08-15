@@ -3,15 +3,17 @@ import CarouselComponent from './carousel/CarouselComponent';
 import homeCarouselProps from '@/interfaces/types/homeCarouselProps';
 import IhomeCarouselData from '@/interfaces/IhomeCarouselData';
 import MachinesWeConnect from './machinesWeConnect/MachinesWeConnect';
-import itrustedCompanies from '@/interfaces/ItrustedCompanies';
+import ItrustedVendors from '@/interfaces/ItrustedVendors';
+import homeTrustedVendorsProps from '@/interfaces/types/homeTrustedVendorsProps';
+import MachineAnalytics from './machineDataAnalytics/MachineAnalytics';
 
 type HomeComponentProps = {
   homeCarouselData: homeCarouselProps;
-  trustedCompaniesData: any;
+  trustedVendorsData: homeTrustedVendorsProps;
 };
 
 const HomeComponent = (props: HomeComponentProps) => {
-  const { homeCarouselData, trustedCompaniesData } = props;
+  const { homeCarouselData, trustedVendorsData } = props;
   return (
     <div>
       <CarouselComponent
@@ -21,11 +23,12 @@ const HomeComponent = (props: HomeComponentProps) => {
         url={homeCarouselData.url as string}
       />
       <MachinesWeConnect
-        data={trustedCompaniesData.data as itrustedCompanies[]}
-        resOk={trustedCompaniesData.resOk as boolean}
-        status={trustedCompaniesData.status as number}
-        url={trustedCompaniesData.url as string}
+        data={trustedVendorsData.data as ItrustedVendors[]}
+        resOk={trustedVendorsData.resOk as boolean}
+        status={trustedVendorsData.status as number}
+        url={trustedVendorsData.url as string}
       />
+      <MachineAnalytics />
     </div>
   );
 };
