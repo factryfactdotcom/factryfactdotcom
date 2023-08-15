@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const navigation: Array<IheaderNavigation> = [
   { title: 'How it works?', path: '/#testing1' },
-  { title: 'Features', path: '/' },
+  { title: 'Features', path: '/features' },
   { title: 'Free Demo', path: '/' },
   { title: 'About Us', path: '/aboutus' },
   { title: 'Our Team', path: '/team' },

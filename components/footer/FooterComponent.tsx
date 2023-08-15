@@ -1,4 +1,4 @@
-import { factryFactIconLogo } from '@/utils/apiConfig';
+import { factryFactLogoWhite } from '@/utils/apiConfig';
 import React from 'react';
 
 const FooterComponent = () => {
@@ -8,9 +8,8 @@ const FooterComponent = () => {
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-              <img src={factryFactIconLogo} alt="Factryfact" className="w-60" />
+              <img src={factryFactLogoWhite} className="w-60" alt="Float UI logo" />
             </a>
-            <div className="text-white">Manufacturing Intelligence</div>
 
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-white">FactryFact Technologies LLP</p>

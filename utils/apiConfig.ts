@@ -6,6 +6,7 @@ export const baseImageUrl: string = 'https://factryfactdotcom.github.io/data-fac
 export const healthCheckApi: string = baseApiUrl + 'data/healthcheck.json';
 export const factryFactIcon: string = baseImageUrl + 'logo/factryfact-icon.svg';
 export const factryFactLogo: string = baseImageUrl + 'logo/factryfact-main.svg';
+export const factryFactLogoWhite: string = baseImageUrl + 'logos/logo-full-text-white-tm.svg';
 export const factryFactIconLogo: string = baseImageUrl + 'logo/factryfact.png';
 export const MachinedataanalysisImage: string = baseImageUrl + 'machinedataanalysis/cover.png';
 
