@@ -12,4 +12,4 @@ export const MachinedataanalysisImage: string = baseImageUrl + 'machinedataanaly
 // Data API
 export const fetchHomeCarouselUrl: string = baseApiUrl + 'data/homecarousel.json';
 export const fetchHomeTrustedVendors: string = baseApiUrl + 'data/trustedvendors.json';
-export const fetchMachinedataanalysis: string = baseApiUrl + 'data/machinedataanalysis.json';
+export const fetchHomeMachinedataanalysis: string = baseApiUrl + 'data/machinedataanalysis.json';
