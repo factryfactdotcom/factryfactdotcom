@@ -9,7 +9,7 @@ type Props = homeTrustedVendorsProps;
 const MachinesWeConnect = (props: Props) => {
   const { data, resOk, status, url } = props;
   return (
-    <div className="py-14 bg-gray-100">
+    <div className="py-14 bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-20">
         <div className="max-w-xl mx-auto text-center">
           <h3 className="text-gray-700 text-3xl font-semibold sm:text-5xl" style={{ fontFamily: 'Rajdhani' }}>

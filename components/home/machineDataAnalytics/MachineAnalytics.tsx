@@ -13,7 +13,7 @@ const MachineAnalytics = (props: Props) => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <p
-            className="mt-2 text-5xl font-bold tracking-tight text-gray-700 sm:text-5xl"
+            className="mt-2 text-5xl tracking-tight font-semibold text-gray-700 sm:text-5xl"
             style={{ fontFamily: 'Rajdhani' }}
           >
             Machine Data Analysis

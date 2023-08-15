@@ -32,7 +32,7 @@ type Props = homeCarouselProps;
 const CarouselComponent = (props: Props) => {
   const { data, resOk } = props;
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

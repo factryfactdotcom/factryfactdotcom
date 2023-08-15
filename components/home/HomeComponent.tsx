@@ -1,13 +1,17 @@
 import React from 'react';
-import CarouselComponent from './carousel/CarouselComponent';
+
 import homeCarouselProps from '@/interfaces/types/homeCarouselProps';
 import IhomeCarouselData from '@/interfaces/IhomeCarouselData';
-import MachinesWeConnect from './machinesWeConnect/MachinesWeConnect';
 import ItrustedVendors from '@/interfaces/ItrustedVendors';
 import homeTrustedVendorsProps from '@/interfaces/types/homeTrustedVendorsProps';
-import MachineAnalytics from './machineDataAnalytics/MachineAnalytics';
 import homeMachineDataProps from '@/interfaces/types/homeMachineDataProps';
 import ImachineDataAnalysis from '@/interfaces/ImachineDataAnalysis';
+
+import CarouselComponent from './carousel/CarouselComponent';
+import MachinesWeConnect from './machinesWeConnect/MachinesWeConnect';
+import MachineAnalytics from './machineDataAnalytics/MachineAnalytics';
+import HowItWorks from './howItWorks/HowItWorks';
+import SomeQuickFacts from './someQuickFacts/SomeQuickFacts';
 
 type HomeComponentProps = {
   homeCarouselData: homeCarouselProps;
@@ -37,6 +41,8 @@ const HomeComponent = (props: HomeComponentProps) => {
         status={machineAnalysisData.status as number}
         url={machineAnalysisData.url as string}
       />
+      <HowItWorks />
+      <SomeQuickFacts />
     </div>
   );
 };

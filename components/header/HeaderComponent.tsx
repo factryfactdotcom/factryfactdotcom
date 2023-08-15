@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const navigation: Array<IheaderNavigation> = [
-  { title: 'How it works?', path: '/' },
+  { title: 'How it works?', path: '/#testing1' },
   { title: 'Features', path: '/' },
   { title: 'Free Demo', path: '/' },
   { title: 'About Us', path: '/aboutus' },
