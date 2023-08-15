@@ -6,21 +6,24 @@ import ItrustedVendors from '@/interfaces/ItrustedVendors';
 import homeTrustedVendorsProps from '@/interfaces/types/homeTrustedVendorsProps';
 import homeMachineDataProps from '@/interfaces/types/homeMachineDataProps';
 import ImachineDataAnalysis from '@/interfaces/ImachineDataAnalysis';
+import homeSomeQuickFactsProps from '@/interfaces/types/homeSomeQuickFactsProps';
 
 import CarouselComponent from './carousel/CarouselComponent';
 import MachinesWeConnect from './machinesWeConnect/MachinesWeConnect';
 import MachineAnalytics from './machineDataAnalytics/MachineAnalytics';
 import HowItWorks from './howItWorks/HowItWorks';
 import SomeQuickFacts from './someQuickFacts/SomeQuickFacts';
+import IsomeQuickFacts from '@/interfaces/IsomeQuickFacts';
 
 type HomeComponentProps = {
   homeCarouselData: homeCarouselProps;
   trustedVendorsData: homeTrustedVendorsProps;
   machineAnalysisData: homeMachineDataProps;
+  someQuickFactsData: homeSomeQuickFactsProps;
 };
 
 const HomeComponent = (props: HomeComponentProps) => {
-  const { homeCarouselData, trustedVendorsData, machineAnalysisData } = props;
+  const { homeCarouselData, trustedVendorsData, machineAnalysisData, someQuickFactsData } = props;
   return (
     <div>
       <CarouselComponent
@@ -42,7 +45,12 @@ const HomeComponent = (props: HomeComponentProps) => {
         url={machineAnalysisData.url as string}
       />
       <HowItWorks />
-      <SomeQuickFacts />
+      <SomeQuickFacts
+        data={someQuickFactsData.data as IsomeQuickFacts[]}
+        resOk={someQuickFactsData.resOk as boolean}
+        status={someQuickFactsData.status as number}
+        url={someQuickFactsData.url as string}
+      />
     </div>
   );
 };
